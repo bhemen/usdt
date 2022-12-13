@@ -14,7 +14,7 @@ The USDT contract is deployed at [0xdAC17F958D2ee523a2206206994597C13D831ec7](ht
 
 Following [OpenZeppelin standards](https://docs.openzeppelin.com/contracts/2.x/api/ownership#Ownable), the USDT contract is "ownable", 
 and the owner is [0xC6CDE7C39eB2f0F0095F41570af89eFC2C1Ea828](https://etherscan.io/address/0xC6CDE7C39eB2f0F0095F41570af89eFC2C1Ea828).
-The owner is [Gnosis Safe](https://gnosis-safe.io/).  This multisig wallet is a 3-out-of-5 multisig, controlled by the following 5 Externally Owned Accounts
+The owner is [Gnosis Safe](https://gnosis-safe.io/).  This multisig wallet is a 3-out-of-6 multisig, controlled by the following 6 Externally Owned Accounts
 
 * [0xf4B51B14b9EE30dc37EC970B50a486F37686E2a8](https://etherscan.io/address/0xf4B51B14b9EE30dc37EC970B50a486F37686E2a8)
 * [0xEe5207d3c88562fc814496Af0845B34CFD4afc8c](https://etherscan.io/address/0xEe5207d3c88562fc814496Af0845B34CFD4afc8c)

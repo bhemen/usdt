@@ -52,7 +52,7 @@ The file [analysis/usdt_frozen_funds.py](analysis/usdt_frozen_funds.py) looks at
 ## Who's in charge?
 
 All the functionality of the USDT is controlled by the contract owner [0xC6CDE7C39eB2f0F0095F41570af89eFC2C1Ea828](https://etherscan.io/address/0xC6CDE7C39eB2f0F0095F41570af89eFC2C1Ea828).
-This means that there is no separation of roles, the same (3-out-of-5) multisig account is in control of issuing, redeeming, blacklisting, clawbacks and pausing.
+This means that there is no separation of roles, the same (3-out-of-6) multisig account is in control of issuing, redeeming, blacklisting, clawbacks and pausing.
 
 ### Minting
 

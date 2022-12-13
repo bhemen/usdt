@@ -63,7 +63,7 @@ Issuing new USDT is controlled by the contract owner [0xC6CDE7C39eB2f0F0095F4157
 
 Tether calls the process of freezing an account's USDT "blacklisting."  
 
-To date, [805 accounts have been frozen](https://bloxy.info/txs/events_sc/0xdac17f958d2ee523a2206206994597c13d831ec7?signature_id=37764)
+To date, [809 accounts have been frozen](https://bloxy.info/txs/events_sc/0xdac17f958d2ee523a2206206994597c13d831ec7?signature_id=37764)
 
 ### Clawbacks
 

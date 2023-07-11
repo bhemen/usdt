@@ -47,11 +47,11 @@ def getContractEvents(api_url,min_start_block,contract_address,outfile,scanned_e
 
 	web3 = Web3(provider)
 
-	checksum_address = Web3.toChecksumAddress(contract_address)
+	checksum_address = Web3.to_checksum_address(contract_address)
 	abi_address = checksum_address
 	if follow_proxy:
 		proxy_address = get_proxy_address(web3,checksum_address) #Check if the address is a proxy contract, and if so get the address of the proxy contract
-		proxy_address = Web3.toChecksumAddress(proxy_address)
+		proxy_address = Web3.to_checksum_address(proxy_address)
 		if proxy_address != checksum_address:
 			print( f"Proxy found: {checksum_address} -> {proxy_address}" )
 			abi_address = proxy_address

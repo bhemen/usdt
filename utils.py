@@ -160,7 +160,7 @@ def get_proxy_address(web3,address):
 			addr = web3.eth.get_storage_at(address,p) #Returns 32 bytes
 			addr = addr.hex() 
 			addr = "0x" + addr[-40:] #Last 20 bytes (40 hex chars) is the address
-			addr = web3.toChecksumAddress(addr)
+			addr = web3.to_checksum_address(addr)
 		except Exception as e:
 			addr = None
 			print(f"Error in get_proxy_address: Failed to read address at location {p}" )
@@ -172,7 +172,7 @@ def get_proxy_address(web3,address):
 					contract = web3.eth.contract(address=addr,abi=beacon_abi)
 					impl = contract.functions.implementation().call()
 					if impl is not None and int(impl,16) != 0:
-						addr = web3.toChecksumAddress(impl)
+						addr = web3.to_checksum_address(impl)
 				except Exception as e:
 					print( f"Error getting beacon implementation" )
 					print( f"{addr}" )

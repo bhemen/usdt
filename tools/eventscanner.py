@@ -121,7 +121,7 @@ class EventScanner:
 	def get_block_timestamp(self, block_num) -> datetime.datetime:
 		"""Get Ethereum block timestamp"""
 		try:
-			block_info = self.web3.eth.getBlock(block_num)
+			block_info = self.web3.eth.get_block(block_num)
 		except BlockNotFound:
 			# Block was not mined yet,
 			# minor chain reorganisation?
@@ -149,7 +149,7 @@ class EventScanner:
 
 		# Do not scan all the way to the final block, as this
 		# block might not be mined yet
-		return self.web3.eth.blockNumber - 1
+		return self.web3.eth.block_number - 1
 
 	def get_last_scanned_block(self) -> int:
 		return self.state.get_last_scanned_block()
@@ -340,7 +340,7 @@ def _retry_web3_call(func, start_block, end_block, retries, delay) -> Tuple[int,
 					end_block-start_block,
 					e,
 					delay)
-				# Decrease the `eth_getBlocks` range
+				# Decrease the `eth_get_blocks` range
 				end_block = start_block + ((end_block - start_block) // 2)
 				# Let the JSON-RPC to recover e.g. from restart
 				time.sleep(delay)

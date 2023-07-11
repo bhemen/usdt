@@ -1,5 +1,5 @@
 """
-Scan the chain for all events for configuration events from the USDT contract
+Scan the chain for configuration events for configuration events from the USDT contract
 """
 
 api_url = 'http://127.0.0.1:8545' #Address of your Ethereum node

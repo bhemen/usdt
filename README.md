@@ -14,7 +14,7 @@ The USDT contract is deployed at [0xdAC17F958D2ee523a2206206994597C13D831ec7](ht
 
 Following [OpenZeppelin standards](https://docs.openzeppelin.com/contracts/2.x/api/ownership#Ownable), the USDT contract is "ownable", 
 and the owner is [0xC6CDE7C39eB2f0F0095F41570af89eFC2C1Ea828](https://etherscan.io/address/0xC6CDE7C39eB2f0F0095F41570af89eFC2C1Ea828).
-The owner is [Gnosis Safe](https://gnosis-safe.io/).  This multisig wallet is a 3-out-of-5 multisig, controlled by the following 5 Externally Owned Accounts
+The owner is [Gnosis Safe](https://gnosis-safe.io/).  This multisig wallet is a 3-out-of-6 multisig, controlled by the following 6 Externally Owned Accounts
 
 * [0xf4B51B14b9EE30dc37EC970B50a486F37686E2a8](https://etherscan.io/address/0xf4B51B14b9EE30dc37EC970B50a486F37686E2a8)
 * [0xEe5207d3c88562fc814496Af0845B34CFD4afc8c](https://etherscan.io/address/0xEe5207d3c88562fc814496Af0845B34CFD4afc8c)
@@ -52,7 +52,7 @@ The file [analysis/usdt_frozen_funds.py](analysis/usdt_frozen_funds.py) looks at
 ## Who's in charge?
 
 All the functionality of the USDT is controlled by the contract owner [0xC6CDE7C39eB2f0F0095F41570af89eFC2C1Ea828](https://etherscan.io/address/0xC6CDE7C39eB2f0F0095F41570af89eFC2C1Ea828).
-This means that there is no separation of roles, the same (3-out-of-5) multisig account is in control of issuing, redeeming, blacklisting, clawbacks and pausing.
+This means that there is no separation of roles, the same (3-out-of-6) multisig account is in control of issuing, redeeming, blacklisting, clawbacks and pausing.  This is a violation of ``[the principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege)'' and is considered bad security practice.
 
 ### Minting
 
@@ -63,7 +63,7 @@ Issuing new USDT is controlled by the contract owner [0xC6CDE7C39eB2f0F0095F4157
 
 Tether calls the process of freezing an account's USDT "blacklisting."  
 
-To date, [805 accounts have been frozen](https://bloxy.info/txs/events_sc/0xdac17f958d2ee523a2206206994597c13d831ec7?signature_id=37764)
+To date, [809 accounts have been frozen](https://bloxy.info/txs/events_sc/0xdac17f958d2ee523a2206206994597c13d831ec7?signature_id=37764)
 
 ### Clawbacks
 

@@ -7,6 +7,7 @@ Tether currently issues USDT on [14 blockchains](https://tether.to/en/transparen
 On Ethereum, USDT is implemented as an ERC-20 contract, but it has significant additional functionality beyond the minimum specified by the [ERC-20 standard](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/).
 
 This repository is provided to aid in analysis of the on-chain use of USDT.  If you are considering *using* USDT, please read the [terms of service](https://tether.to/en/legal/).
+Although it's not stated explicitly in the Terms of Service, Tether also says you [cannot withdraw in amounts under 100,000](https://tether.to/es/fees/).
 
 ## Contract overview
 
@@ -63,7 +64,7 @@ Issuing new USDT is controlled by the contract owner [0xC6CDE7C39eB2f0F0095F4157
 
 Tether calls the process of freezing an account's USDT "blacklisting."  
 
-To date, [809 accounts have been frozen](https://bloxy.info/txs/events_sc/0xdac17f958d2ee523a2206206994597c13d831ec7?signature_id=37764)
+To date, [963 accounts have been frozen](https://bloxy.info/txs/events_sc/0xdac17f958d2ee523a2206206994597c13d831ec7?signature_id=37764)
 
 ### Clawbacks
 

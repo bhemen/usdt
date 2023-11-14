@@ -2,7 +2,17 @@
 
 ## USDT ([Link to Box](https://upenn.box.com/s/h0gm29etd67y499o5yqdxxphs2b5e46p))
 
-We've parsed events emitted by [USDT contract](https://etherscan.io/address/0xdac17f958d2ee523a2206206994597c13d831ec7) using this [Ethereum Log Parser](https://github.com/niuniu-zhang/Ethereum-Log-Parser) and uploaded them into [Box](https://upenn.box.com/s/h0gm29etd67y499o5yqdxxphs2b5e46p). Here are the descriptions of schema for each event:
+We've parsed events emitted by [USDT contract](https://etherscan.io/address/0xdac17f958d2ee523a2206206994597c13d831ec7) using this [Ethereum Log Parser](https://github.com/niuniu-zhang/Ethereum-Log-Parser) and uploaded them into [Box](https://upenn.box.com/s/h0gm29etd67y499o5yqdxxphs2b5e46p). In total, we've parsed 7 events:
+1. `AddedBlackList`
+2. `Approval`
+3. `DestroyedBlackFunds`
+4. `Issue`
+5. `Redeem`
+6. `RemovedBlackList`
+7. `Transfer`
+
+
+Here are the descriptions of schema for each event:
 
 ### AddedBlackList 
 
